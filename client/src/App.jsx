@@ -4,9 +4,11 @@ import Signup from './pages/signup';
 import Profile from './pages/profile';
 import Home from './pages/home';
 import Aboutus from './pages/about';
+import Header from './components/Header';
 export default function App() {
   return (
     <BrowserRouter className='text-blue-700'>
+      <Header />
       <Routes>
         <Route path='/home' Component={<Home/>}/>
         <Route path='/about' element={<Aboutus/>} />
